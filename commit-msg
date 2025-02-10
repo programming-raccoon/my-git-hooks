@@ -5,7 +5,7 @@ pattern="^(feat|fix|chore|reformat|style|refactor|perf|test|docs|ci|build|revert
 commit_msg=$(cat "$1")
 
 if [[ ! $commit_msg =~ $pattern ]]; then
-    echo "Error: El mensaje del commit debe tener el formato 'type: Aaaaaaaa bbbbbbbb cccccc'"
+    echo "Error: Invalid commit message fotrmat, use 'type: Aaaaa bbbbb ccccc'"
     exit 1
 fi
 
